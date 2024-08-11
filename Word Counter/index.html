@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="txt">
+        <h2>Word Counter</h2>
+    </div>
+    <!--User Input-->
+    <div class="main-box">
+        <textarea name="user-input" id="input" cols="95" rows="15" spellcheck="true" contenteditable="true" placeholder="Paste Here..."></textarea>
+        <div class="btn">
+            <button id="user-btn" onclick="count()">Count</button>
+        </div>
+    </div>
+    <!--All Counts-->
+    <div class="features" id="user-opt">
+        <div class="left">
+            <p>Characters : <span id="ch">0</span></p>
+            <p>Sentences : <span id="sen">0</span></p>
+            <p>Estimated Reading Time : <span id="read">0</span>s</p>
+        </div>
+        <div class="right">
+            <p>Words : <span id="words">0</span></p>
+            <p>Paragraphs : <span id="para">0</span></p>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+    <script src="./counter.js"></script>
+</body>
+
+</html>
